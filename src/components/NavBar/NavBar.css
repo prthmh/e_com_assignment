@@ -1,8 +1,9 @@
 .navbar {
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 3rem;
   font-size: 22px;
+  color: white;
 }
 .hamburger,
 .search_icon,
@@ -23,28 +24,47 @@
 }
 
 select {
-  background-color: #171717;
+  background-color: #262626;
   color: white;
   font-family: inherit;
   padding: 3px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  outline: none;
 }
 
-.search_box {
-  gap: 5px;
-}
 .search_icon {
   font-size: 16px;
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: #f97316;
+  color: white;
+  padding: 8px 10px;
 }
 .cart_nav,
 .login {
   text-transform: uppercase;
   font-size: 18px;
   gap: 4px;
+}
+.search_box {
+  /* border: 0.1px solid black; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+.search_box input {
+  font-family: inherit;
+  width: 30rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+
+.language_picker select {
+  background-color: white;
+  color: black;
 }
