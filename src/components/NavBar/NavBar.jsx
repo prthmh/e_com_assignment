@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const {
-    appState: { category },
+    appState: { category, search },
     setAppState,
   } = useData();
   const [allCategories, setAllCategories] = useState([]);
-  const [input, setInput] = useState("")
+  const [input, setInput] = useState("");
 
   useEffect(() => {
     async function fetchCategories() {
@@ -27,8 +27,18 @@ const NavBar = () => {
     fetchCategories();
   }, []);
 
-  //   console.log(allCategories);
-  console.log("chossen", category);
+  const handleInput = (e) => {
+    setInput(e.target.value);
+    if (e.target.value === "") {
+      setAppState((prevState) => ({ ...prevState, search: "" }));
+    }
+  };
+
+  const handleSearchClick = () => {
+    console.log("in");
+    setAppState((prevState) => ({ ...prevState, search: input.trim() }));
+  };
+
   return (
     <nav className="navbar">
       <div className="hamburger">
@@ -58,10 +68,14 @@ const NavBar = () => {
 
       {/* search box */}
       <div className="search_box">
-        <input placeholder="Enter product name here" />
-        <div className="search_icon">
+        <input
+          placeholder="Enter product name here"
+          value={input}
+          onChange={handleInput}
+        />
+        <button className="search_icon" onClick={handleSearchClick}>
           <FaMagnifyingGlass />
-        </div>
+        </button>
       </div>
 
       {/* language picker */}

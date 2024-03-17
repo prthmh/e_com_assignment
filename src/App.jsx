@@ -7,10 +7,10 @@ import { getItems } from "./utils/getItems";
 
 function App() {
   const {
-    appState: { category, items },
+    appState: { items, category, search },
     setAppState,
   } = useData();
-  // console.log(appState);
+  
   useEffect(() => {
     async function fetchData() {
       const res = await fetch("https://fakestoreapi.com/products");
@@ -20,8 +20,8 @@ function App() {
     fetchData();
   }, []);
 
-  const prodList = getItems(items, category);
-  console.log(prodList);
+  const prodList = getItems(items, category, search);
+  
 
   return (
     <>
