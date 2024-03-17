@@ -1,6 +1,6 @@
 # E commerce Landing Page
 
-## <a href="(https://ecom-elevate-assignment.netlify.app)" target="_blank">Demo Link</a>
+## <a href="https://ecom-elevate-assignment.netlify.app" target="_blank">Demo Link</a>
 
 
 This is an assignment given to me by a company for frontend intern role.
