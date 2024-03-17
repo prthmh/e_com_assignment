@@ -1,8 +1,17 @@
-# React + Vite
+# E commerce Lnading Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Demo Link](https://ecom-elevate-assignment.netlify.app)
 
-Currently, two official plugins are available:
+This is an assignment given to me by a company for frontend intern role.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tech Stack:
+1) HTML, CSS
+2) JavaScript
+3) React JS
+4) React Icons
+
+### Features
+
+- Users can update the product list by changing the category.
+- Users can search for the products.
+- Responsive Design
