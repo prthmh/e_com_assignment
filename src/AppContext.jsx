@@ -4,10 +4,10 @@ const DataContext = createContext();
 const initialState = {
   category: "all",
   items: [],
+  search: "",
 };
 export const DataProvider = ({ children }) => {
   const [appState, setAppState] = useState(initialState);
-
 
   return (
     <DataContext.Provider value={{ appState, setAppState }}>

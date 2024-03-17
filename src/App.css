@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   /* height: 90vh; */
 }
 
@@ -9,4 +10,10 @@ header h1 {
   font-size: 40px;
   margin: 1.5rem 0;
   text-align: center;
+}
+
+.products {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 300px);
 }
