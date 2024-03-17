@@ -1,4 +1,4 @@
-# E commerce Lnading Page
+# E commerce Landing Page
 
 ## [Demo Link](https://ecom-elevate-assignment.netlify.app)
 
