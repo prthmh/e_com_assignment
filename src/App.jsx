@@ -44,7 +44,7 @@ function App() {
           </div>
           <button className="buy_btn">BUY NOW</button>
         </div>
-        <h1>Man & Women Fashion</h1>
+        <h1 id="fashion" >Man & Women Fashion</h1>
         <div className="products">
           {prodList?.map((prod) => (
             <div key={prod.id}>
